@@ -1,0 +1,53 @@
+Goal:   Create a rock, paper, scissors program where the user plays against the computer
+
+
+Input:  User will be asked to input "rock", "papers", or "scissors" to continue to play the game
+        User can input "q" if they want to quit the game
+
+Output: The program will display a prompt to the user, asking them to type "rock", "papers", "scissors", or "q"
+        Display the round number
+        Display the user's choice
+        Display the computer's choice
+        Display the result of the round
+        Display the user's score and the computer's score
+        If the user quits the game, display a good bye message and the overall score
+        If the user inputs anything other than "rock", "papers", "scissors", or "q", display error message and to try again.
+
+Steps:  1. Include necessary header files
+            - cstdlib for rand functions
+            - ctime for time function
+
+        2. Intialize variables
+            - "userScore" to store the user's score (starting at 0)
+            - "computerScore" to store the computer's score (starting at 0)
+            - "round" to keep track of the current round (starts at 0)
+        
+        3. Make an array called "options" that includes the choices for the game
+
+        4. Seed the random number generator based on time
+
+        5. Make a loop for the game so the game can keep going after every turn
+
+        6. While in the loop
+            - Increment the round by 1
+            - Display the round number and the game to the user
+            - Ask the user to input "rock", "papers", "scissors", or "q"
+            - Read the user's input
+        
+        7. If the user wants to quit the game, break out of the loop and end the game
+            - Display good bye message and the final score of the game.
+        
+        8. Generate a random choice from the computer 
+            - Choice is from 0 to 2
+            - This will be the index of the array called "options"
+        
+        9. Display the user's choice and the computer's choice
+
+        10. Determine who wins the round
+            - If the user's choice is the same as the computer's choice, it's a draw
+            - If the user beats the computer, increment user's score by 1
+            - If the computer beats the user, increment computer's score by 1
+            - Display the Result of the round to the user
+            - If "rock", "papers", "scissors", or "q" was not typed in, display error message and tell the user to try again
+        
+        11. After every round, display the user's score and the computer's score.
